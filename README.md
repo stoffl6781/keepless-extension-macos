@@ -9,8 +9,8 @@ Mac-/Safari-Teil.
 - `Keepless/` – Xcode-Projekt (Mac-App + Safari Web Extension), committet
 - `scripts/stage-extension.sh` – Build-Phase „Stage extension“: kopiert bei jedem Build die
   ausgelieferten Extension-Dateien ins `.appex` (ohne `docs/`, `tests/`, `*.md`, `package.json`,
-  `offscreen.*`) und entfernt im Manifest die Berechtigungen, die Safari nicht kennt
-  (`idle`, `offscreen`, `downloads`, `clipboardWrite`)
+  `offscreen.*`), entfernt im Manifest die Berechtigungen, die Safari nicht kennt
+  (`idle`, `offscreen`, `downloads`, `clipboardWrite`), und ergänzt `nativeMessaging` für Touch ID
 - `EXTENSION_VERSION` – Tag der Extension, aus dem ein **Release**-Build gebaut werden muss.
   Debug-Builds warnen nur, Release-Builds brechen ab, wenn der Checkout nicht exakt auf diesem
   Tag steht oder uncommittete Änderungen hat
@@ -30,8 +30,11 @@ Mac-/Safari-Teil.
 - Kein `idle`, `offscreen`, `downloads`: Die Extension erkennt das und weicht aus
   (Auto-Lock per Inaktivitäts-Alarm, Speichern über `save.html`, kein Leeren der Zwischenablage).
 - Die Extension-Adresse (`safari-web-extension://<UUID>`) wechselt bei jedem Safari-Start.
-  Passkey-basiertes Touch ID überlebt das nicht; geplant ist Touch ID über die Mac-App
-  (Schlüsselbund, Native Messaging).
+  Passkey-basiertes Touch ID überlebt das nicht. Deshalb läuft Touch ID in Safari über die Mac-App
+  (`SafariWebExtensionHandler.swift`): ein zufälliges Geheimnis im Schlüsselbund hinter
+  `.biometryCurrentSet`, mit dem die Extension das Master-Passwort versiegelt
+  (`lib/biometrics.js` in der Extension). Dafür braucht das `.appex` das Entitlement
+  `keychain-access-groups`.
 
 ## App Store
 

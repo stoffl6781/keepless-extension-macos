@@ -39,6 +39,7 @@ phase = f'''/* Begin PBXShellScriptBuildPhase section */
 \t\t\t);
 \t\t\tname = "Stage extension";
 \t\t\toutputPaths = (
+\t\t\t\t"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/manifest.json",
 \t\t\t);
 \t\t\trunOnlyForDeploymentPostprocessing = 0;
 \t\t\tshellPath = /bin/bash;
@@ -60,5 +61,10 @@ text = text.replace('ENABLE_USER_SCRIPT_SANDBOXING = YES;', 'ENABLE_USER_SCRIPT_
 # DECISION: macOS 14 instead of the converter's default (current SDK) so older Macs can install it.
 text = re.sub(r'MACOSX_DEPLOYMENT_TARGET = [0-9.]+;', 'MACOSX_DEPLOYMENT_TARGET = 14.0;', text)
 text = text.replace('CODE_SIGN_STYLE = Automatic;', f'CODE_SIGN_STYLE = Automatic;\n\t\t\t\tDEVELOPMENT_TEAM = {TEAM_ID};')
+
+# Keychain access for the native Touch ID secret (see SafariWebExtensionHandler.swift)
+text = text.replace('\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = app.keepless.Keepless.Extension;',
+                    '\t\t\t\tCODE_SIGN_ENTITLEMENTS = "Keepless Extension/Keepless Extension.entitlements";\n'
+                    '\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = app.keepless.Keepless.Extension;')
 
 open(path, 'w', encoding='utf-8').write(text)

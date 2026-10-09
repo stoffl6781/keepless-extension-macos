@@ -42,6 +42,8 @@ path = sys.argv[1]
 manifest = json.load(open(path, encoding='utf-8'))
 unsupported = {'idle', 'offscreen', 'downloads'}
 manifest['permissions'] = [p for p in manifest.get('permissions', []) if p not in unsupported]
+# Touch ID runs through the container app (SafariWebExtensionHandler.swift); Chrome must not ask for this
+manifest['permissions'].append('nativeMessaging')
 optional = [p for p in manifest.get('optional_permissions', []) if p != 'clipboardWrite']
 if optional:
     manifest['optional_permissions'] = optional
