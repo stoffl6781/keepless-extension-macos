@@ -28,6 +28,23 @@ body {
     text-align: center;
 }
 
+h1 {
+    margin: 0;
+    font: -apple-system-title2;
+}
+
+p {
+    margin: 0;
+}
+
+ol {
+    margin: 0;
+    padding-left: 1.4em;
+    max-width: 34em;
+    text-align: left;
+    line-height: 1.5;
+}
+
 body:not(.state-on, .state-off) :is(.state-on, .state-off) {
     display: none;
 }
@@ -37,6 +54,11 @@ body.state-on :is(.state-off, .state-unknown) {
 }
 
 body.state-off :is(.state-on, .state-unknown) {
+    display: none;
+}
+
+/* Once the extension is on, the setup steps are no longer needed */
+body.state-on ol {
     display: none;
 }
 

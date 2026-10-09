@@ -62,6 +62,10 @@ text = text.replace('ENABLE_USER_SCRIPT_SANDBOXING = YES;', 'ENABLE_USER_SCRIPT_
 text = re.sub(r'MACOSX_DEPLOYMENT_TARGET = [0-9.]+;', 'MACOSX_DEPLOYMENT_TARGET = 14.0;', text)
 text = text.replace('CODE_SIGN_STYLE = Automatic;', f'CODE_SIGN_STYLE = Automatic;\n\t\t\t\tDEVELOPMENT_TEAM = {TEAM_ID};')
 
+# DECISION: The app carries the version of the extension it ships (EXTENSION_VERSION, without "v")
+version = open(path.rsplit('/Keepless/', 1)[0] + '/EXTENSION_VERSION').read().strip().lstrip('v')
+text = re.sub(r'MARKETING_VERSION = [0-9.]+;', f'MARKETING_VERSION = {version};', text)
+
 # Keychain access for the native Touch ID secret (see SafariWebExtensionHandler.swift)
 text = text.replace('\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = app.keepless.Keepless.Extension;',
                     '\t\t\t\tCODE_SIGN_ENTITLEMENTS = "Keepless Extension/Keepless Extension.entitlements";\n'
