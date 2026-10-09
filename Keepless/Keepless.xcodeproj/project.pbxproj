@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1C13C913078C8CD007A8A24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C13C903078C8CD007A8A24 /* AppDelegate.swift */; };
+		A1C13C953078C8CD007A8A24 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = A1C13C933078C8CD007A8A24 /* Main.html */; };
+		A1C13C973078C8CD007A8A24 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A1C13C963078C8CD007A8A24 /* Icon.png */; };
+		A1C13C993078C8CD007A8A24 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = A1C13C983078C8CD007A8A24 /* Style.css */; };
+		A1C13C9B3078C8CD007A8A24 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = A1C13C9A3078C8CD007A8A24 /* Script.js */; };
+		A1C13C9D3078C8CD007A8A24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C13C9C3078C8CD007A8A24 /* ViewController.swift */; };
+		A1C13CA03078C8CD007A8A24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C13C9E3078C8CD007A8A24 /* Main.storyboard */; };
+		A1C13CA23078C8CE007A8A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C13CA13078C8CE007A8A24 /* Assets.xcassets */; };
+		A1C13CA93078C8CE007A8A24 /* Keepless Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A1C13CA83078C8CE007A8A24 /* Keepless Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1C13CAE3078C8CE007A8A24 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C13CAD3078C8CE007A8A24 /* SafariWebExtensionHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1C13CAA3078C8CE007A8A24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1C13C853078C8CD007A8A24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1C13CA73078C8CE007A8A24;
+			remoteInfo = "Keepless Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1C13CB53078C8CE007A8A24 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				A1C13CA93078C8CE007A8A24 /* Keepless Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A1C13C8D3078C8CD007A8A24 /* Keepless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Keepless.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C13C903078C8CD007A8A24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1C13C943078C8CD007A8A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		A1C13C963078C8CD007A8A24 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A1C13C983078C8CD007A8A24 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		A1C13C9A3078C8CD007A8A24 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		A1C13C9C3078C8CD007A8A24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1C13C9F3078C8CD007A8A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1C13CA13078C8CE007A8A24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1C13CA33078C8CE007A8A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C13CA83078C8CE007A8A24 /* Keepless Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Keepless Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C13CAD3078C8CE007A8A24 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		A1C13CAF3078C8CE007A8A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1C13C8A3078C8CD007A8A24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		A1C13CA53078C8CE007A8A24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1C13C843078C8CD007A8A24 = {
+			isa = PBXGroup;
+			children = (
+				A1C13C8F3078C8CD007A8A24 /* Keepless */,
+				A1C13CAC3078C8CE007A8A24 /* Keepless Extension */,
+				A1C13C8E3078C8CD007A8A24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1C13C8E3078C8CD007A8A24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1C13C8D3078C8CD007A8A24 /* Keepless.app */,
+				A1C13CA83078C8CE007A8A24 /* Keepless Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1C13C8F3078C8CD007A8A24 /* Keepless */ = {
+			isa = PBXGroup;
+			children = (
+				A1C13C903078C8CD007A8A24 /* AppDelegate.swift */,
+				A1C13C9C3078C8CD007A8A24 /* ViewController.swift */,
+				A1C13C9E3078C8CD007A8A24 /* Main.storyboard */,
+				A1C13CA13078C8CE007A8A24 /* Assets.xcassets */,
+				A1C13CA33078C8CE007A8A24 /* Info.plist */,
+				A1C13C923078C8CD007A8A24 /* Resources */,
+			);
+			path = Keepless;
+			sourceTree = "<group>";
+		};
+		A1C13C923078C8CD007A8A24 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1C13C933078C8CD007A8A24 /* Main.html */,
+				A1C13C963078C8CD007A8A24 /* Icon.png */,
+				A1C13C983078C8CD007A8A24 /* Style.css */,
+				A1C13C9A3078C8CD007A8A24 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1C13CAC3078C8CE007A8A24 /* Keepless Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A1C13CAD3078C8CE007A8A24 /* SafariWebExtensionHandler.swift */,
+				A1C13CAF3078C8CE007A8A24 /* Info.plist */,
+			);
+			path = "Keepless Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1C13C8C3078C8CD007A8A24 /* Keepless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C13CB63078C8CE007A8A24 /* Build configuration list for PBXNativeTarget "Keepless" */;
+			buildPhases = (
+				A1C13C893078C8CD007A8A24 /* Sources */,
+				A1C13C8A3078C8CD007A8A24 /* Frameworks */,
+				A1C13C8B3078C8CD007A8A24 /* Resources */,
+				A1C13CB53078C8CE007A8A24 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1C13CAB3078C8CE007A8A24 /* PBXTargetDependency */,
+			);
+			name = Keepless;
+			productName = Keepless;
+			productReference = A1C13C8D3078C8CD007A8A24 /* Keepless.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1C13CA73078C8CE007A8A24 /* Keepless Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C13CB23078C8CE007A8A24 /* Build configuration list for PBXNativeTarget "Keepless Extension" */;
+			buildPhases = (
+				A1C13CA43078C8CE007A8A24 /* Sources */,
+				A1C13CA53078C8CE007A8A24 /* Frameworks */,
+				A1C13CA63078C8CE007A8A24 /* Resources */,
+				C0FFEE00000000000000A001 /* Stage extension */,
+			);
+			buildRules = (
+			);
+			name = "Keepless Extension";
+			productName = "Keepless Extension";
+			productReference = A1C13CA83078C8CE007A8A24 /* Keepless Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1C13C853078C8CD007A8A24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A1C13C8C3078C8CD007A8A24 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					A1C13CA73078C8CE007A8A24 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = A1C13C883078C8CD007A8A24 /* Build configuration list for PBXProject "Keepless" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1C13C843078C8CD007A8A24;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A1C13C8E3078C8CD007A8A24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1C13C8C3078C8CD007A8A24 /* Keepless */,
+				A1C13CA73078C8CE007A8A24 /* Keepless Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1C13C8B3078C8CD007A8A24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				A1C13C973078C8CD007A8A24 /* Icon.png in Resources */,
+				A1C13CA03078C8CD007A8A24 /* Main.storyboard in Resources */,
+				A1C13C9B3078C8CD007A8A24 /* Script.js in Resources */,
+				A1C13C953078C8CD007A8A24 /* Main.html in Resources */,
+				A1C13CA23078C8CE007A8A24 /* Assets.xcassets in Resources */,
+				A1C13C993078C8CD007A8A24 /* Style.css in Resources */,
+			);
+		};
+		A1C13CA63078C8CE007A8A24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C0FFEE00000000000000A001 /* Stage extension */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Stage extension";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "\"$SRCROOT/../scripts/stage-extension.sh\" \"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1C13C893078C8CD007A8A24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				A1C13C9D3078C8CD007A8A24 /* ViewController.swift in Sources */,
+				A1C13C913078C8CD007A8A24 /* AppDelegate.swift in Sources */,
+			);
+		};
+		A1C13CA43078C8CE007A8A24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				A1C13CAE3078C8CE007A8A24 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1C13CAB3078C8CE007A8A24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1C13CA73078C8CE007A8A24 /* Keepless Extension */;
+			targetProxy = A1C13CAA3078C8CE007A8A24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1C13C933078C8CD007A8A24 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C13C943078C8CD007A8A24 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		A1C13C9E3078C8CD007A8A24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1C13C9F3078C8CD007A8A24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1C13CB03078C8CE007A8A24 /* Debug configuration for PBXProject "Keepless" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1C13CB13078C8CE007A8A24 /* Release configuration for PBXProject "Keepless" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A1C13CB33078C8CE007A8A24 /* Debug configuration for PBXNativeTarget "Keepless Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL5823JQAL;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Keepless Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Keepless Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.keepless.Keepless.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1C13CB43078C8CE007A8A24 /* Release configuration for PBXNativeTarget "Keepless Extension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL5823JQAL;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Keepless Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Keepless Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.keepless.Keepless.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A1C13CB73078C8CE007A8A24 /* Debug configuration for PBXNativeTarget "Keepless" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL5823JQAL;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Keepless/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Keepless;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.keepless.Keepless;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1C13CB83078C8CE007A8A24 /* Release configuration for PBXNativeTarget "Keepless" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL5823JQAL;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Keepless/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Keepless;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.keepless.Keepless;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1C13C883078C8CD007A8A24 /* Build configuration list for PBXProject "Keepless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C13CB03078C8CE007A8A24 /* Debug configuration for PBXProject "Keepless" */,
+				A1C13CB13078C8CE007A8A24 /* Release configuration for PBXProject "Keepless" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		A1C13CB23078C8CE007A8A24 /* Build configuration list for PBXNativeTarget "Keepless Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C13CB33078C8CE007A8A24 /* Debug configuration for PBXNativeTarget "Keepless Extension" */,
+				A1C13CB43078C8CE007A8A24 /* Release configuration for PBXNativeTarget "Keepless Extension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		A1C13CB63078C8CE007A8A24 /* Build configuration list for PBXNativeTarget "Keepless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C13CB73078C8CE007A8A24 /* Debug configuration for PBXNativeTarget "Keepless" */,
+				A1C13CB83078C8CE007A8A24 /* Release configuration for PBXNativeTarget "Keepless" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1C13C853078C8CD007A8A24 /* Project object */;
+	validationLevel = 1;
+}
